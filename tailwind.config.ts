@@ -11,7 +11,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        green: "hsl(75, 94%, 57%)",
+        grey: "hsl(0, 0%, 20%)",
+        darkGrey: "hsl(0, 0%, 12%)",
+        offBlack: "hsl(0, 0%, 8%)",
+      },
+    },
   },
   plugins: [
     addVariablesForColors,
@@ -20,7 +27,7 @@ const config: Config = {
         {
           "bg-dot-thick": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="15" cy="10" r="2.0"></circle></svg>`
             )}")`,
           }),
         },
