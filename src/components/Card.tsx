@@ -58,7 +58,7 @@ export function Card() {
             translateZ="100"
             className="mx-auto text-[10px] text-white my-4"
           >
-            "Front-end developer and avid reader."
+            &quot;Front-end developer and avid reader.&quot;
           </CardItem>
           <div className="flex flex-col gap-3">
             {socials.map((item, id) => {
